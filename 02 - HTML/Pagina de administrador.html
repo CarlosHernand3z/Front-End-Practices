@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Deluxe Bakery® Administrador</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    table{border-collapse:collapse;
+        border-style: inset;
+        border-color: rgb(241, 209, 23);
+        width: 50%;
+        background-color:rgb(8, 8, 8);
+        color:#ddd;
+        
+    }
+
+    header{background-color: rgb(241, 209, 23);
+        color:rgb(8, 8, 8);
+        border-radius: 25px;
+    }
+
+    article{
+        background-color: rgb(48, 45, 45);
+        border-radius: 25px;
+    }
+
+    td, th{
+        border: 1px solid rgb(241, 209, 23);
+        text-align: left;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    h1{color: rgb(8, 8, 8);
+    }
+
+    body{
+        text-align: center;
+        font-family: Helvetica, sans-serifHelvetica, sans-serif;;
+        background-color:rgb(8, 8, 8);
+        color:#ddd;
+    }
+
+    input{
+        text-align: center;
+        width: 20%;
+    }
+
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+</style>
+</head>
+
+<body>
+<header>
+<h1>Datos de pedidos y reservas en almacén</h1><br>
+<hr>
+
+<h2>Reservas disponibles</h2>
+<p>Cantidad de sabores disponibles</p>
+
+<label for="numero1"></label>
+<input type="number" id="numero1" name="numero1" value="254">
+
+<p>Cantidad de adornos disponibles</p>
+
+<label for="numero2"></label>
+<input type="number" id="numero2" name="numero2" value="158"> <br><br>
+</header>
+<hr>
+
+<article>
+<h2>Pedidos realizados</h2>
+
+<table class="center">
+    <tr>
+        <th>Nombre</th>
+        <th>Tipo pastel</th>
+        <th>Sabores</th>
+        <th>Adornos</th>
+    </tr>
+    
+    <tr>
+        <td>Estafania Garza</td>
+        <td>Normal</td>
+        <td>Chocolate</td>
+        <td>Corazones</td>
+    </tr>
+
+    <tr>
+        <td>Roberto Gonzáles</td>
+        <td>Mixto</td>
+        <td>Chocolate, Fresa</td>
+        <td>Vela de cumpleaños</td>
+    </tr>
+
+    <tr>
+        <td>Javier Becerra</td>
+        <td>Frutal</td>
+        <td>Mango, Fresa, Manzana</td>
+        <td>Número cumpleaños</td>
+    </tr>
+
+    <tr>
+        <td>Yolanda Cinfuentes</td>
+        <td>Arcoíris</td>
+        <td>Chocolate, Fresa, Mango, Zanahoria, Manzana </td>        
+        <td>Personalizado</td>
+    </tr>
+</table></article>
+
+</body>
+</html>
