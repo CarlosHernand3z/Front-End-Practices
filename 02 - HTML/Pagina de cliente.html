@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Deluxe Bakery®</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+table{
+  text-align: left;
+  width: 70%;
+}
+
+input{
+  text-align: center;
+}
+
+img{ width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+a{
+  color: #f7bd1e;
+
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: black;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  text-align:justify;
+  font-size: 20px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 50%;
+  background: rgb(48, 45, 45);
+  padding: 25px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 25px;
+  width: 50%;
+  background-color: #f7bd1e;
+  color: black;
+  text-align: center;
+  border-radius: 30px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: black;
+  width: 70%; 
+  text-align: center;
+}
+
+/* Style the footer */
+footer {
+  background-color:black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+  <a href="/html/paginaprincipal">Página principal</a> |
+  <a href="/html/servicios">Servicios</a> |
+  <a href="/html/quienessomos">¿Quiénes somos?</a>
+
+  <header>
+      <img src="./LogoPasteleria.png" alt="Logo pastelería" style="width:850px; height:300px;" class="center">
+  
+  <h1>Bienvenido a Deluxe Bakery®</h1>
+
+      <p>En Deluxe Bakery® nos caracterizamos por entregar los mejores pasteles, no solo por su exquisito sabor si no porque podrá personalizar su pastel de la forma que usted quiera. <br>
+      Con un solo click podrás elegir entre multiples sabores y adornos que más vayan acorde contigo. Además, te lo enviamos totalmente gratis hasta la puerta de tu casa o puedes recogerlo en algunas de nuestras instalaciones. <br><br>
+      Bienvenido a la experiencia de Deluxe Bakery® donde nos esforzarmos por entregarle la mejor experiencia. </p>
+
+      <hr>
+      <form action="pedido.js">
+<section>
+  <nav>
+      <h2>Sabores de pastel</h2> <img src="./IconoCake.png" alt="IconoCake" style="float: rigth; width: 125px; height: 129.7px;"></h2>
+    <hr>
+    <p>Por favor eliga los sabores que desea (puede incluir mas de uno si así lo desea para mezclarlos)</p>
+    <ul>
+      <li><input type="checkbox" id="chocolate" name="chocolate" value="Chocolate"> 
+        <label for="chocolate">Sabor de chocolate ------------------------$180</label><br></li>
+
+        <li><input type="checkbox" id="fresa" name="fresa" value="Fresa">
+        <label for="fresa">Sabor de fresa ------------------------------$150</label><br></li>
+
+        <li><input type="checkbox" id="mango" name="mango" value="Mango">
+          <label for="mango">Sabor de mango ---------------------------$120</label><br></li>
+
+          <li><input type="checkbox" id="zanahoria" name="zanahoria" value="Zanahoria">
+            <label for="zanahoria">Sabor de zanahoria -----------------------$100</label><br></li>
+
+            <li><input type="checkbox" id="manzana" name="manzana" value="Manzana">
+              <label for="">Sabor de manzana ------------------------$150</label></li><br>
+              
+
+    </ul>
+        </nav>
+  
+<article>
+
+    <h2>Adornos para pasteles <br> <img src="./IconoParty.png" alt="IconoAdorno" style="width: 120px; height: 140px;"></h2>
+    <hr>
+    <p>Por favor eliga los adornos que desea que lleve su pastel (puede incluir mas de uno si así lo desea para mezclarlos) </p> 
+
+    <input type="checkbox" id="cumpleaños" name="cumpleaños" value=" VelaCumpleaños">
+    <label for="cumpleaños">Vela de cumple años -------------------$80</label><br>
+    
+    <input type="checkbox" id="numeroscumple" name="numeroscumple" value="Numeroscumpleaños">
+    <label for="numeroscumple">Números de cumple años -----------$100</label><br>
+    
+    <input type="checkbox" id="corazones" name="corazones" value="Corazones">
+    <label for="corazones">Corazones -------------------------------$120</label><br>
+    
+    <input type="checkbox" id="boda" name="boda" value="Boda">
+    <label for="boda">Para boda--------------------------------$250</label><br>
+
+    <input type="checkbox" id="personalizado" name="personalizado" value="Personalizado">
+    <label for="personalizado">Personalizado --------------------------$280</label><br><br><br>
+  </article>
+
+
+    
+
+</section>
+
+<footer>
+
+    <h1>Llenar datos para envio</h1>
+
+    <hr>
+
+    <p>¿Desea recibir el pastel en casa o recogerlo en alguna de nuestras instalaciones?</p>
+
+    
+    <input type="radio" id="recogerlo" name="envio" value="Recoger">
+    <label for="recogerlo">Recoger en sucursal</label><br><br>
+    <input type="radio" id="enviocasa" name="envio" value="EnvioCasa">
+    <label for="enviocasa">Envio a casa</label>
+
+    <h2>Ingresar datos</h2>
+
+    <label for="nombre"></label>
+    <input type="name" id="nombre1" name="nombre1" placeholder="Nombre y apellidos" style="width: 50%;"><br>
+
+    <label for="tel1"></label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10" placeholder="Número de telefono" style="width: 50%;"><br>
+
+    <label for="correo1"></label><br>
+    <input type="email" id="correo1" name="correo1" placeholder="Correo Electronico" style="width: 50%;"><br><br>
+    
+    <input type="reset">
+    <input type="submit">
+
+    <hr>
+    <table class="left">
+
+      <tr>
+        <td>Ubicación</td>
+        <td>Teléfonos</td>
+        <td></td>
+        <td>Horarios</td>
+      </tr>
+
+      <tr class="rigth">
+        <td>Colonia del Roble #5698, entre Venustiano y Guerrero Norte</td>
+        <td>83555345</td>
+        <td></td>
+        <td>Lunes a Viernes de 10 am a 7 pm</td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>83555475</td>
+      </tr>
+
+     
+    </table>
+
+  </footer>
+
+</form>
+</body>
+</html>
